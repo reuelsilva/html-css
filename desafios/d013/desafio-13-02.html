@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Células mescladas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 10px;
+        }
+        table{
+            border-collapse: separate;
+            width: 400px;
+        }
+        table tr td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+
+        </tr>
+    </table>
+
+    <main>
+        <p><strong>linha 1:</strong> A e B</p>
+        <p>A expande 4 colunas</p>
+        <p><strong>linha 2:</strong> C D E F (B é expandido da linha 1)</p>
+        <p>C expande 4 linhas </p>
+        <p><strong>Linha 3:</strong> G H I</p>
+        <p><strong>linha 4:</strong> J K L</p>
+        <p><strong>linha 5:</strong> M</p>
+    </main>
+</body>
+</html>
