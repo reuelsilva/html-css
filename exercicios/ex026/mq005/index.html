@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i onclick="clickMenu()" class="mdi mdi-menu"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opcao 1</a></li>
+                <li><a href="#">Opcao 2</a></li>
+                <li><a href="#">Opcao 3</a></li>
+                <li><a href="#">Opcao 4</a></li>
+                <li><a href="#">Opcao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia at, impedit sunt, praesentium facilis et a voluptates atque voluptatum laborum nisi in tempora, sint aperiam id odit assumenda velit totam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis vero nihil eveniet, quaerat omnis hic, dignissimos necessitatibus deserunt sequi doloremque expedita maxime rem odio alias repellendus beatae? Neque, quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus enim vero voluptas, libero error assumenda ratione, eaque alias id nam incidunt rem vel dolores porro explicabo veritatis. Obcaecati, libero! Itaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet corrupti quos ea voluptatibus adipisci perspiciatis nemo corporis, esse quidem. Fuga, magnam! Laudantium aspernatur blanditiis obcaecati dolor quas, sint ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio voluptates asperiores est ratione illum corporis quas cupiditate. Aut quo officia voluptates dignissimos fugit recusandae ea aliquam accusamus similique quisquam?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus esse facilis voluptatibus quidem aut aliquam nulla labore dicta soluta magni blanditiis fugiat, reprehenderit reiciendis impedit, delectus veritatis quos ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolores ea dolore eaque vero odit fugiat, cum aperiam nihil facilis rerum labore in officia accusamus cumque, fuga quae reiciendis aliquid?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none';
+            }else{
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
