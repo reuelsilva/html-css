@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    height: calc(60vh + 4px); /*soma do vh de cada row + soma de gaps verticais*/
+    background-color: black;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-areas: 'c1 c2 c3'
+                         'c4 c5 c6'
+                         'c7 c8 c9';
+    grid-gap: 2px;
+}
+
+div{
+    background-color: #9159c1;
+}
+
+div#celula-1{
+    background-color: yellow;
+    grid-area: c9;
+}
+
+div#celula-2{
+    background-color: violet;
+    grid-area: c5;
+}
+
+div#celula-3{
+    background-color: palegreen;
+    grid-area: c7;
+}

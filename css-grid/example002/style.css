@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 600px;
+    height: calc(60vh + 10px); /*20vh + 20vh + 20vh + 5px + 5px*/
+    background-color: black;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh;
+    grid-gap: 5px;
+}
+
+div{
+    background-color: #9159c1;
+}
+
+#celula-1{
+    background-color: yellow;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#celula-4{
+    background-color: palegreen;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
